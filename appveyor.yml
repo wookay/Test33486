@@ -28,10 +28,11 @@ test_script:
   - chcp
 
   # - chcp 65001  # UTF-8
-  - cp -r c:\julia c:\z테스트
+  - cp -r c:\julia c:\테스트
 
   - cd c:\julia\bin
-  - julia.exe -E "1" -H c:\z테스트\bin
+  - julia.exe -E "1" -H c:\테스트\bin
 
-  - cd c:\z*\bin
+  - cd c:\
+  - cd c:\테스트\bin
   - julia.exe -E "1"
