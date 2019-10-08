@@ -28,11 +28,12 @@ test_script:
   - chcp
 
   # - chcp 65001  # UTF-8
+  - $DEST = "테스트"
 
   - cp -r c:\julia c:\테스트
 
   - cd c:\julia\bin
   - julia.exe -E "1" -H c:\테스트\bin
 
-  - cd 'c:\테스트\bin'
+  - cd 'c:\$DEST\bin'
   - julia.exe -E "1"
