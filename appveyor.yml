@@ -35,7 +35,8 @@ test_script:
   - cd c:\\julia\\bin
   - julia.exe -E "1" -H c:\\테스트\\bin
 
-  - dir c:\\
+  - cd c:\\
+  - dir
 
   - dir c:\\테스트
 
