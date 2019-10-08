@@ -14,8 +14,8 @@ script:
 
   - cp -r c:\\julia c:\\테스트
 
-  - cd c:\\julia
-  - ./julia -E 'Sys.BINDIR' -H c:\\테스트\\bin
+  - cd c:\\julia\\bin
+  - ./julia.exe -E 'Sys.BINDIR' -H c:\\테스트\\bin
 
-  - cd c:\\테스트
-  - ./julia -E 'Sys.BINDIR'
+  - cd c:\\테스트\\bin
+  - ./julia.exe -E 'Sys.BINDIR'
