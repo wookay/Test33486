@@ -20,8 +20,8 @@ init:
 - ps: Set-WinSystemLocale ko-KR
 
 test_script:
+  - ver
   - ps: |
-      ver
 
       cd c:\\julia\\bin
       ./julia.exe -E "1"
