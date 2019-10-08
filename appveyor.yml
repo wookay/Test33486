@@ -1,0 +1,33 @@
+environment:
+  matrix:
+  - julia_version: 1.2
+
+platform:
+  - x64 # 64-bit
+
+notifications:
+  - provider: Email
+    on_build_success: false
+    on_build_failure: false
+    on_build_status_changed: false
+
+install:
+  - ps: iex ((new-object net.webclient).DownloadString("https://raw.githubusercontent.com/JuliaCI/Appveyor.jl/version-1/bin/install.ps1"))
+
+build: off
+
+test_script:
+  - cd c:\\julia\\bin
+  - julia.exe -E "1"
+
+  - chcp
+
+  - chcp 65001  # UTF-8
+
+  - cp -r c:\\julia c:\\테스트
+
+  - cd c:\\julia\\bin
+  - julia.exe -E "1" -H c:\\테스트\\bin
+
+  - cd c:\\테스트\\bin
+  - julia.exe -E "1"
