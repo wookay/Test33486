@@ -13,5 +13,6 @@ script:
   - julia -E 'Sys.BINDIR'
   - cd
   - cp -r c:\\julia c:\\테스트
+  - SET
   - cd c:\\테스트\\bin
-  - julia -E 'Sys.BINDIR'
+  - ./julia -E 'Sys.BINDIR'
