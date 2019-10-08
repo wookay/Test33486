@@ -10,6 +10,8 @@ julia:
   - 1.2
 
 script:
+  - ver
+
   - julia -E 'Sys.BINDIR'
 
   - cp -r c:\\julia c:\\테스트

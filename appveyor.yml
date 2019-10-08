@@ -32,11 +32,11 @@ test_script:
   - cp -r c:\\julia c:\\julia2
 
   - cd c:\\
-  - ren julia2 테스트
+  - ren julia2 테스트jl
 
   - cd c:\\julia\\bin
-  - julia.exe -E "1" -H c:\\테스트\\bin
+  - julia.exe -E "1" -H c:\\테스트jl\\bin
 
-  - cd c:\테*
+  - cd c:\*jl
   - cd bin
   - julia.exe -E "1"
