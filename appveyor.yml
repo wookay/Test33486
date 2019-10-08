@@ -38,7 +38,7 @@ test_script:
   - cd c:\\
   - dir
 
-  - dir c:\\테스트
+  - dir c:\테*
 
   - dir c:\\테스트\\bin
 
