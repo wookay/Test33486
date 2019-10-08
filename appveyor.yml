@@ -40,7 +40,7 @@ test_script:
 
   - dir c:\테*
 
-  - dir c:\\테스트\\bin
+  - dir c:\테*\bin
 
-  - cd c:\\테스트\\bin
+  - cd c:\테*\bin
   - julia.exe -E "1"
