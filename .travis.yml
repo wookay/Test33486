@@ -10,7 +10,7 @@ julia:
   - 1.2
 
 script:
-  - ver
+  # ver: Windows Server 1803
 
   - julia -E 'Sys.BINDIR'
 
