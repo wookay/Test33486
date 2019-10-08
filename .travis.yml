@@ -12,6 +12,7 @@ julia:
 script:
   - julia -E 'Sys.BINDIR'
   - cd
+  - chcp
   - cp -r c:\\julia c:\\테스트
   - SET
   - cd c:\\테스트\\bin
