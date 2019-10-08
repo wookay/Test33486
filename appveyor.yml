@@ -25,7 +25,7 @@ test_script:
 
   - chcp
 
-  - chcp 65001  # UTF-8
+  # - chcp 65001  # UTF-8
 
   - cp -r c:\\julia c:\\테스트
 
