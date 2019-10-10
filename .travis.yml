@@ -16,6 +16,7 @@ script:
   - ./julia.exe -E "1"
 
   - cp -r c:\\julia c:\\테스트
+  - rm c:\\julia\\lib\\julia\\sys.dll
 
   - cd c:\\테스트\\bin
   - ./julia.exe -E "1"
